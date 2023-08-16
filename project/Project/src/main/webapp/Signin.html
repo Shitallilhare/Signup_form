@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignUp</title>
+  <style type="text/css">
+    body {
+      background-color:  blanchedalmond;
+      font-family: Arial;
+    }
+
+
+
+    .form-center {
+      position: relative;
+      width: 40%;
+      height: 4em;
+      display: flex;
+      align: center;
+      justify-content: center;
+    }
+    .center{
+      border:5px solid;
+      margin:auto;
+      width:50%;
+      padding:10px;
+    }
+
+    .form-center form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-30%, -30%);
+      padding: 1em;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-center input[type="text"],
+    .form-center input[type="password"],
+    .form-center input[type="email"] {
+      width: 50%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-center input[type="submit"] {
+      width: 100%;
+      padding: 0.5em;
+      background-color: moccasin;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .form-center input[type="submit"]:hover {
+      background-color:lightgreen;
+    }
+
+    .form-center a {
+      text-decoration: none;
+      color: gray;
+    }
+
+    .form-center a:hover {
+      color: grey;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <form method="post" action="Signin.jsp">
+      <h2>Sign in</h2>
+      <label>Enter name:</label><br>
+      <input type="text" name="t1"><br>
+      <label> Enter Password:</label><br>
+      <input type="Password" name="t2"><br>
+      <input type="submit" value="signin">
+      
+    </form>
+  </div>
+</body>
+</html>
